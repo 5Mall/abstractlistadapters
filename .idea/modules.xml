@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MvnRepo.iml" filepath="$PROJECT_DIR$/MvnRepo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/abstractlistadapters/abstractlistadapters.iml" filepath="$PROJECT_DIR$/abstractlistadapters/abstractlistadapters.iml" />
+    </modules>
+  </component>
+</project>
