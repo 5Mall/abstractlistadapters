@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MvnRepo.iml" filepath="$PROJECT_DIR$/MvnRepo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/abstractlistadapters/abstractlistadapters.iml" filepath="$PROJECT_DIR$/abstractlistadapters/abstractlistadapters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/abstractlistadapters.iml" filepath="$PROJECT_DIR$/library/abstractlistadapters.iml" />
     </modules>
   </component>
 </project>

@@ -62,7 +62,8 @@ public abstract class ModeListAdapter<T> extends BaseAdapter {
     }
 
     // getItemViewType返回的数值其取值必须在getViewTypeCount返回的数值之内。
-    // 也就是如果getViewTypeCount返回的数值是3，那么getItemViewType返回的数值就必须是0，1，2三个中的一个 否则无效
+    // 也就是如果getViewTypeCount返回的数值是3，
+    // 那么getItemViewType返回的数值就必须是0，1，2三个中的一个 否则无效
     @Override
     public int getItemViewType(int position) {
         return super.getItemViewType(position);

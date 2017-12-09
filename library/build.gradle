@@ -1,0 +1,17 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+}
+
+dependencies {
+    api 'com.android.support:recyclerview-v7:26.0.0'
+}
+
+tasks.withType(Javadoc) {
+    options.addStringOption('Xdoclint:none', '-quiet')
+    options.addStringOption('encoding', 'UTF-8')
+    options.addStringOption('charSet', 'UTF-8')
+}
+
+apply from: 'https://raw.githubusercontent.com/walkermanX/gradle-mvn-push/master/gradle-mvn-push.gradle'
