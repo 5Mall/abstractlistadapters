@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MvnRepo.iml" filepath="$PROJECT_DIR$/MvnRepo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/library/abstractlistadapters.iml" filepath="$PROJECT_DIR$/library/abstractlistadapters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AbstractListAdapters.iml" filepath="$PROJECT_DIR$/AbstractListAdapters.iml" />
+      <module fileurl="file://D:\WorkSpace\AndroidStudioProject\personal_projects\mvn_repo_projects\AbstractListAdapters\library\abstractlistadapters.iml" filepath="D:\WorkSpace\AndroidStudioProject\personal_projects\mvn_repo_projects\AbstractListAdapters\library\abstractlistadapters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
     </modules>
   </component>
 </project>
