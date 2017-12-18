@@ -148,9 +148,10 @@
 
 
 ## 感谢
+
 * [响哥](https://github.com/lixiangers)
 
 ## 后记：
 
-有任何问题请邮件联系：zhangwei-baba@163.com
+* 有任何问题请邮件联系：zhangwei-baba@163.com
 
