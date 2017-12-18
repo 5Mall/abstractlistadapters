@@ -6,18 +6,13 @@
 
 该适配器可为`ListView`、`GridView`、`RecyclerView`提供数据适配，通过使用抽象类和`java`泛型机制继承传统适配器类，将重复性代码整体封装，在保存`ViewHolder`缓存机制的前提下，将适配器的核心功能代码逻辑剥离，使得我们只需要通过编写继承于`BaseItemView<T>`的派生类即可完成数据的适配。大大减少了冗余代码的编写工作，让我们能将时间和精力聚焦于核心业务逻辑的编写从而提高编码效率。
 
-### 核心类及说明：
-
----
+## 核心类及说明：
 
 * `BaseRecyclerAdapter<T>`  ：用于对`RecyclerView`的数据适配
 * `ModeListAdapter<T> `：用于对`ListView`、`GridView` 的数据适配
 * `BaseItemView<T> `：适用于`BaseRecyclerAdapter<T>`和`ModeListAdapter<T>`的通用`Item`布局类，该类承担了`Item`视图业务和数据处理业务的整合。通过编写该类的派生类可以定制化的实现各种`Item`视图以及对应的数据展示
 
-### 引入：
-
----
-
+## 引入：
 1. 在项目的根目录中找到**`build.gradle `** 文件 （*不是module的`build.gradle `文件* ），加入如下代码：
 
    ```groovy
@@ -39,10 +34,7 @@
        compile 'com.walkermanx.android.lib:abstractlistadapters:0.0.1-SNAPSHOT'
    ```
 
-### 使用示例：
-
----
-
+##使用示例：
 **1. **编写`BaseItemView<T>`的派生类，实现自定义的视图业务
 
    * 编写自定义的`Item Layout`布局文件：
@@ -150,9 +142,6 @@
 
 
 
-### 后记：
-
----
-
+## 后记：
 有任何问题请邮件联系：zhangwei-baba@163.com
 
