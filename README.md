@@ -1,6 +1,6 @@
 # [Abstractlistadapters:](https://github.com/walkermanX/abstractlistadapters) 简单好用的列表控件数据适配器
 
-[![versionInfo](https://img.shields.io/badge/abstractlistadapters-0.0.1--SNAPSHOT-brightgreen.svg?style=plastic)](http://walkermanx.github.io)
+[![versionInfo](https://img.shields.io/badge/abstractlistadapters-0.0.1-brightgreen.svg?style=plastic)](http://walkermanx.github.io)
 [![简书个人页](https://img.shields.io/badge/%E7%AE%80%E4%B9%A6-Lucky__Zhang-orange.svg?style=plastic)](http://www.jianshu.com/u/b9cbfe0a7f35)
 
 
