@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
  * Description: 所有list的item布局都继承此类
  */
 
-public class BaseItemView<T> extends LinearLayout {
+public abstract class BaseItemView<T> extends LinearLayout {
     public BaseItemView(Context context) {
         super(context);
     }
@@ -19,12 +19,12 @@ public class BaseItemView<T> extends LinearLayout {
         super(context, attrs);
     }
 
-    public void setModel(T model) {
-    }
+    public abstract void setModel(T model);
 
-    public void setPosition(int position,int sum) {
-    }
+    public abstract void setPosition(int position,int sum);
 
+    @Override
     public void setSelected(boolean b) {
+        super.setSelected(b);
     }
 }

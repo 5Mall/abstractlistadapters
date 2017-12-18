@@ -13,13 +13,14 @@
 * `BaseItemView<T> `：适用于`BaseRecyclerAdapter<T>`和`ModeListAdapter<T>`的通用`Item`布局类，该类承担了`Item`视图业务和数据处理业务的整合。通过编写该类的派生类可以定制化的实现各种`Item`视图以及对应的数据展示
 
 ## 引入：
+
 **1.** 在项目的根目录中找到 __`build.gradle`__ 文件 （*不是module的`build.gradle `文件* ），加入如下代码：
 
    ```groovy
    allprojects {
        repositories {
            maven {
-               url 'https://raw.githubusercontent.com/walkermanX/mvn-repo/master/Android/Lib/abstractlistadapters/snapshots/'
+               url 'https://raw.githubusercontent.com/walkermanX/mvn-repo/master/Android/Lib/abstractlistadapters/'
            }
        }
    }
@@ -28,10 +29,10 @@
 **2.** 在你的项目module的`build.gradle `文件中引入依赖：
 
    ```groovy
-    //AndroidStudio3.0以上版本
-    implementation 'com.walkermanx.android.lib:abstractlistadapters:0.0.1-SNAPSHOT'
+    //建议AndroidStudio3.0以上版本 根据需要使用implementation或者api方式引入依赖
+    implementation 'com.walkermanx.android.lib:abstractlistadapters:0.0.1'
     //AndroidStudio3.0以下版本
-    compile 'com.walkermanx.android.lib:abstractlistadapters:0.0.1-SNAPSHOT'
+    compile 'com.walkermanx.android.lib:abstractlistadapters:0.0.1'
    ```
 
 ## 使用示例：
