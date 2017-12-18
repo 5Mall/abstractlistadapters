@@ -100,23 +100,29 @@
 
      ```java
      ListView listView = (ListView) findViewById(R.id.list);
-     listView.setAdapter(new ModeListAdapter<AtomBean>(this) {
-                 @NonNull
-                 @Override
-                 protected BaseItemView GetCurrentModelItemViewInstanceByViewType(Context context, int viewType) {
-                     return null;
-                 }
+       listView.setAdapter(new ModeListAdapter<AtomBean>(this) {
+            @NonNull
+            @Override
+            protected BaseItemView GetCurrentModelItemViewInstanceByViewType(Context context, int viewType) {
+               return new AtomBeanItemView(context);
+            }
 
-                 //如果item需要根据ViewType做不同的视图加载，则需要重写该方法即可 否则只需要重写GetCurrentModelItemViewInstanceByViewType即可
-                 
-                 // getItemViewType返回的数值其取值必须在getViewTypeCount返回的数值之内。
-                 // 也就是如果getViewTypeCount返回的数值是3，
-                 // 那么getItemViewType返回的数值就必须是0，1，2三个中的一个 否则无效
-                 @Override
-                 public int getItemViewType(int position) {
-                     return super.getItemViewType(position);
-                 }
-             });
+            //如果item需要根据ViewType做不同的视图加载，则需要重写getItemViewType 和 getViewTypeCount 方法即可 否则只需要重写GetCurrentModelItemViewInstanceByViewType即可
+
+            // getItemViewType返回的数值其取值必须在getViewTypeCount返回的数值之内。
+            // 也就是如果getViewTypeCount返回的数值是3，
+            // 那么getItemViewType返回的数值就必须是0，1，2三个中的一个 否则无效
+            @Override
+            public int getItemViewType(int position) {
+                return super.getItemViewType(position);
+            }
+
+            @Override
+            public int getViewTypeCount() {
+                return super.getViewTypeCount();
+            }
+            
+        });
      ```
 
      ​
