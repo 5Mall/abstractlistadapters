@@ -13,7 +13,7 @@
 * `BaseItemView<T> `：适用于`BaseRecyclerAdapter<T>`和`ModeListAdapter<T>`的通用`Item`布局类，该类承担了`Item`视图业务和数据处理业务的整合。通过编写该类的派生类可以定制化的实现各种`Item`视图以及对应的数据展示
 
 ## 引入：
-**1.** 在项目的根目录中找到**`build.gradle `** 文件 （*不是module的`build.gradle `文件* ），加入如下代码：
+### **1.** 在项目的根目录中找到**`build.gradle `** 文件 （*不是module的`build.gradle `文件* ），加入如下代码：
 
    ```groovy
    allprojects {
@@ -25,7 +25,7 @@
    }
    ```
 
-**2.** 在你的项目module的`build.gradle `文件中引入依赖：
+### **2.** 在你的项目module的`build.gradle `文件中引入依赖：
 
    ```groovy
     	//AndroidStudio3.0以上版本
@@ -35,7 +35,7 @@
    ```
 
 ## 使用示例：
-**1.** 编写`BaseItemView<T>`的派生类，实现自定义的视图业务
+### **1.** 编写`BaseItemView<T>`的派生类，实现自定义的视图业务
 
    * 编写自定义的`Item Layout`布局文件：
 
@@ -94,7 +94,7 @@
      }
      ```
 
-**2.** 示例：
+### **2.** 示例：
 
    * `ListView`、`GridView` 中
 
