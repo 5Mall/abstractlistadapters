@@ -1,7 +1,7 @@
 # [Abstractlistadapters:](https://github.com/walkermanX/abstractlistadapters) 简单好用的列表控件数据适配器
 
 [![abstractlistadapters](https://img.shields.io/badge/abstractlistadapters-0.0.1--SNAPSHOT-brightgreen.svg?style=plastic)](http://walkermanx.github.io)
-[![简书个人页](https://img.shields.io/badge/%E7%AE%80%E4%B9%A6-Lucky__Zhang-orange.svg?style=plastic)](http://www.jianshu.com/u/b9cbfe0a7f35)
+[![简书个人页](https://img.shields.io/badge/%E7%AE%80%E4%B9%A6-Lucky__Zhang-orange.svg?style=plastic&colorA=f3804b&colorB=10b23c)](http://www.jianshu.com/u/b9cbfe0a7f35)
 
 
 该适配器可为`ListView`、`GridView`、`RecyclerView`提供数据适配，通过使用抽象类和`java`泛型机制继承传统适配器类，将重复性代码整体封装，在保存`ViewHolder`缓存机制的前提下，将适配器的核心功能代码逻辑剥离，使得我们只需要通过编写继承于`BaseItemView<T>`的派生类即可完成数据的适配。大大减少了冗余代码的编写工作，让我们能将时间和精力聚焦于核心业务逻辑的编写从而提高编码效率。
