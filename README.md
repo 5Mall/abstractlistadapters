@@ -1,6 +1,6 @@
-# [Abstractlistadapters:](https://github.com/walkermanX/abstractlistadapters) 简单好用的列表控件数据适配器
+# [Abstractlistadapters:](https://github.com/walkermanx/abstractlistadapters) 简单好用的列表控件数据适配器
 
-[![abstractlistadapters](https://img.shields.io/badge/abstractlistadapters-0.0.1--SNAPSHOT-brightgreen.svg?style=plastic)](http://walkermanx.github.io)
+[![abstractlistadapters](https://img.shields.io/badge/abstractlistadapters-0.0.1-brightgreen.svg?style=plastic)](http://walkermanx.github.io)
 [![简书个人页](https://img.shields.io/badge/%E7%AE%80%E4%B9%A6-5Mall-orange.svg?style=plastic&colorA=f2715f&colorB=10b23c)](http://www.jianshu.com/u/b9cbfe0a7f35)
 
 
@@ -20,7 +20,7 @@
    allprojects {
        repositories {
            maven {
-               url 'https://raw.githubusercontent.com/walkermanX/mvn-repo/master/Android/Lib/abstractlistadapters/snapshots/'
+               url 'https://raw.githubusercontent.com/walkermanx/mvn-repo/master/Android/Lib/abstractlistadapters/'
            }
        }
    }
@@ -30,9 +30,9 @@
 
    ```groovy
     //建议AndroidStudio3.0以上版本 根据需要使用implementation或者api方式引入依赖
-    implementation 'com.walkermanx.android.lib:abstractlistadapters:0.0.1-SNAPSHOT'
+    implementation 'com.walkermanx:abstractlistadapters:0.0.1'
     //AndroidStudio3.0以下版本
-    compile 'com.walkermanx.android.lib:abstractlistadapters:0.0.1-SNAPSHOT'
+    compile 'com.walkermanx:abstractlistadapters:0.0.1'
    ```
 
 ## 使用示例：

@@ -17,4 +17,4 @@ tasks.withType(Javadoc) {
     options.addStringOption('charSet', 'UTF-8')
 }
 
-apply from: 'https://raw.githubusercontent.com/walkermanX/gradle-mvn-push/master/gradle-mvn-push.gradle'
+apply from: 'https://raw.githubusercontent.com/walkermanx/gradle-mvn-push/master/gradle-mvn-push.gradle'
