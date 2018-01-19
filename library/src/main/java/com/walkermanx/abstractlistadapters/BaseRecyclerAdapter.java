@@ -24,7 +24,7 @@ import java.util.Set;
 public abstract class BaseRecyclerAdapter<T> extends RecyclerView.Adapter<BaseRecyclerAdapter.Holder> {
     public static final int TYPE_HEADER = -101;
     public static final int TYPE_FOOTER = -202;
-    //    public static final int TYPE_NORMAL = -2;
+    public static final int TYPE_FULL = -203;
     private List<T> mDatas = new ArrayList<>();
     private View mHeaderView;
     private View mFooterView;
@@ -177,7 +177,7 @@ public abstract class BaseRecyclerAdapter<T> extends RecyclerView.Adapter<BaseRe
             gridManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
                 @Override
                 public int getSpanSize(int position) {
-                    return getItemViewType(position) == TYPE_HEADER || getItemViewType(position) == TYPE_FOOTER
+                    return getItemViewType(position) == TYPE_HEADER || getItemViewType(position) == TYPE_FOOTER|| getItemViewType(position) == TYPE_FULL
                             ? gridManager.getSpanCount() : 1;
                 }
             });
