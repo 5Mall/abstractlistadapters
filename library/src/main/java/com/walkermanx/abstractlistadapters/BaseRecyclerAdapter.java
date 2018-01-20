@@ -17,8 +17,8 @@ import java.util.Set;
  * Created by 张伟 on 2017/3/16 : 15:59
  * Email:zhangwei-baba@163.com
  * Description: 为recyclerview系控件编写的通用adapter
- *              使用方法：
- *              实现该抽象类 返回对应的必要参数即可
+ * 使用方法：
+ * 实现该抽象类 返回对应的必要参数即可
  */
 
 public abstract class BaseRecyclerAdapter<T> extends RecyclerView.Adapter<BaseRecyclerAdapter.Holder> {
@@ -97,6 +97,10 @@ public abstract class BaseRecyclerAdapter<T> extends RecyclerView.Adapter<BaseRe
         mDatas.add(data);
     }
 
+    public T get(int pos) {
+        return mDatas.get(pos);
+    }
+
     public void addData(int pos, T data) {
         mDatas.add(pos, data);
     }
@@ -122,11 +126,11 @@ public abstract class BaseRecyclerAdapter<T> extends RecyclerView.Adapter<BaseRe
 
     @Override
     public int getItemViewType(int position) {
-        if (position==getItemCount()-1 && hasFooter() )
+        if (position == getItemCount() - 1 && hasFooter())
             return TYPE_FOOTER;
 
         if (hasHeader()) {
-            if (position==0)
+            if (position == 0)
                 return TYPE_HEADER;
             position--;
         }
@@ -177,7 +181,7 @@ public abstract class BaseRecyclerAdapter<T> extends RecyclerView.Adapter<BaseRe
             gridManager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
                 @Override
                 public int getSpanSize(int position) {
-                    return getItemViewType(position) == TYPE_HEADER || getItemViewType(position) == TYPE_FOOTER|| getItemViewType(position) == TYPE_FULL
+                    return getItemViewType(position) == TYPE_HEADER || getItemViewType(position) == TYPE_FOOTER || getItemViewType(position) == TYPE_FULL
                             ? gridManager.getSpanCount() : 1;
                 }
             });
@@ -208,16 +212,17 @@ public abstract class BaseRecyclerAdapter<T> extends RecyclerView.Adapter<BaseRe
 
     @Override
     public int getItemCount() {
-        int delt=0;
+        int delt = 0;
         if (hasHeader())
             delt++;
         if (hasFooter())
             delt++;
-        return mDatas.size()+delt;
+        return mDatas.size() + delt;
     }
 
     /**
      * 不计算header  footer view
+     *
      * @return
      */
     public int getRawItemCount() {
@@ -228,6 +233,7 @@ public abstract class BaseRecyclerAdapter<T> extends RecyclerView.Adapter<BaseRe
         setSelectedPositionSilently(selectedPosition);
         notifyDataSetChanged();
     }
+
     public void setSelectedPositionSilently(int selectedPosition) {
         clearAllSelectedPositions();
         addSelectedPositionSilently(selectedPosition);
@@ -305,10 +311,10 @@ public abstract class BaseRecyclerAdapter<T> extends RecyclerView.Adapter<BaseRe
     protected abstract BaseItemView GetCurrentModelItemViewInstanceByViewType(Context context, int viewType);
 
     public BaseRecyclerAdapter.Holder onCreate(ViewGroup parent, int viewType) {
-        return new Holder(GetCurrentModelItemViewInstanceByViewType(parent.getContext(),viewType));
+        return new Holder(GetCurrentModelItemViewInstanceByViewType(parent.getContext(), viewType));
     }
 
-    protected  int itemViewType(int pos){
+    protected int itemViewType(int pos) {
         return 0;
     }
 
